@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CyberBulling</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/style.css">
+
+
+	<!-- подключение bootstrap CDN -->
+	<link href="npm/bootstrap%405.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+	<!-- header -->
+	<header class="header">
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+			<div class="container">
+				<a class="navbar-brand" href="#">Кибербуллинг</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#home">Главная</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#reasonsID">Причины</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#accordion">Советы</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#doctors">Специалисты</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#assist">Ассистент</a>
+						</li>
+					</ul>
+	</header>
+
+	<!-- INTRO -->
+	<section class="bgimage" id="home">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+					<h2 class="hero_title">Кибербуллинг</h2>
+					<p class="hero_desc">Проблема нашего времени</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Карты с причинами -->
+	<section class="reasons" id="reasonsID">
+		<div class="container">
+			<h3 class="title">Причины кибербуллинга</h3>
+			<div class="reasons__row">
+				<!-- 01 -->
+				<div class="reasons__item item1">
+					<h5 class="reasons__title">Культурные различия</h5>
+					<p class="reason__text">нетерпимость к другой религии, цвету кожи, языку или обычаям</p>
+				</div>
+
+				<!-- 02 -->
+				<div class="reasons__item item2">
+					<h5 class="reasons__title">Жажда внимания</h5>
+					<p class="reason__text">потребность обратить на себя взоры окружающих — неважно, что используются неприглядные
+						методы. Играет роль и желание признания со стороны неких значимых фигур</p>
+				</div>
+
+				<!-- 03 -->
+				<div class="reasons__item item3">
+					<h5 class="reasons__title">Психологические особенности</h5>
+					<p class="reason__text">низкая самооценка, внутриличностный конфликт, подавленные эмоции и жизненные кризисы
+						являются теми факторами, которые проецируются вовне через отрицательные действия</p>
+				</div>
+
+				<!-- 04 -->
+				<div class="reasons__item item4">
+					<h5 class="reasons__title">Желание безопасности</h5>
+					<p class="reason__text">из-за страха самому быть объектом нападок часто люди проявляют отрицательные качества
+						в
+						виде защитного действия или примыкают к группе обидчиков. Особенно характерно для школьных и рабочих
+						коллективов</p>
+				</div>
+			</div>
+		</div> <!-- /CONTAINER -->
+	</section>
+
+	<!-- AККОРДИОН -->
+	<main class="main" id="accordion">
+		<div class="container">
+			<h1 class='title'>Как справиться с кибербуллингом?</h1>
+			<section class="faq-container" aria-label="Frequently Asked Questions">
+				<details>
+					<summary>
+						<span class="faq-title">Не отвечайте на провокации</span>
+						<!-- Plus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+							<path d="M12 9l0 6"></path>
+						</svg>
+						<!-- Minus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-minus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+						</svg>
+					</summary>
+					<div class="faq-content">
+						Самый основной момент. Для того, кто хочет нанести вред своими придирками или вербальной агрессией, важно,
+						чтобы
+						объект его воздействий проявлял эмоции. Если лишить его «пищи», то это значительно пошатнет позиции
+						нападающего.
+					</div>
+				</details>
+
+				<details>
+					<summary>
+						<span class="faq-title">Расскажите о наболевшем</span>
+						<!-- Plus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+							<path d="M12 9l0 6"></path>
+						</svg>
+						<!-- Minus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-minus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+						</svg>
+					</summary>
+					<div class="faq-content">
+						Не стоит замалчивать проблему. Вы всегда можете поделиться переживаниями с близкими родственниками и
+						друзьями,
+						получить поддержку.
+						<br> </br>
+						Особенно это важно для несовершеннолетнего. Часто он или она теряются в сложных и стрессовых ситуациях, не
+						знают, что делать. Так ребенок получит защиту со стороны родителей и других взрослых.
+						Всегда есть возможность поговорить о возникших сложностях по телефону горячей линии.
+					</div>
+				</details>
+
+				<details>
+					<summary>
+						<span class="faq-title">Защищайте свою позицию</span>
+						<!-- Plus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+							<path d="M12 9l0 6"></path>
+						</svg>
+						<!-- Minus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-minus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+						</svg>
+					</summary>
+					<div class="faq-content">
+						Если вы или ваши дети столкнулись с травлей на социальном ресурсе или в любом другом закоулке Интернета, не
+						бойтесь делать снимки экрана с оскорблениями и перепиской.
+						<br></br>
+						Это будет подтверждением в случае разбирательств; также такие сведения можно отправить родителям и
+						педагогам,
+						если речь идет о подростке. Сейчас активно работают модераторы на различных ресурсах — через них можно найти
+						способ заблокировать обидчика.
+					</div>
+				</details>
+
+				<details>
+					<summary>
+						<span class="faq-title">Подходите осознанно к действиям в сети</span>
+						<!-- Plus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+							<path d="M12 9l0 6"></path>
+						</svg>
+						<!-- Minus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-minus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+						</svg>
+					</summary>
+					<div class="faq-content">
+						Лучше оберегайте данные, разрешите отправлять вам сообщения только близким и проверенным друзьям, не
+						добавляйте сомнительных пользователей к себе и не публикуйте слишком личную информацию.
+					</div>
+				</details>
+
+				<details>
+					<summary>
+						<span class="faq-title">Снимайте стресс</span>
+						<!-- Plus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+							<path d="M12 9l0 6"></path>
+						</svg>
+						<!-- Minus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-minus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+						</svg>
+					</summary>
+					<div class="faq-content">
+						Негатив в онлайн-пространстве — один из множества раздражителей в современной жизни.
+						<br></br>
+						Не стоит зацикливаться на нем, а лучше найти точки приложения в других сферах. Различные хобби, спортзал,
+						кружки по творчеству — всегда можно найти интересное дело по себе. Так вы не только снизите напряжение, но и
+						меньше времени будете проводить за компьютером.
+					</div>
+				</details>
+
+				<details>
+					<summary>
+						<span class="faq-title">Психологическая готовность</span>
+						<!-- Plus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+							<path d="M12 9l0 6"></path>
+						</svg>
+						<!-- Minus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-minus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+						</svg>
+					</summary>
+					<div class="faq-content">
+						Стресс и шок от кибербуллинга могут серьезно влиять на психологическое состояние пользователя.
+						<br></br>
+						Обучение методам психологической готовности предоставляет эффективные инструменты для развития устойчивости
+						к стрессу. Эти навыки включают в себя осознание и управление эмоциями, а также построение позитивного
+						мышления. Пользователи, оснащенные этими инструментами, могут лучше справляться с негативными ситуациями, а
+						также предотвращать их долгосрочные психологические последствия.
+					</div>
+				</details>
+
+				<details>
+					<summary>
+						<span class="faq-title">Медийная грамотность</span>
+						<!-- Plus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+							<path d="M12 9l0 6"></path>
+						</svg>
+						<!-- Minus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-minus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+						</svg>
+					</summary>
+					<div class="faq-content">
+						Способность различать достоверные и неточные источники информации является ключевой частью медийной
+						грамотности.
+						<br></br>
+						Обучение этим навыкам не только снижает вероятность участия в цифровых конфликтах, но и помогает
+						пользователям формировать критическое мышление и аналитические способности. Важно не только распознавать
+						фейковую информацию, но и понимать манипулятивные приемы, которые могут быть использованы в кибербуллинге.
+					</div>
+				</details>
+
+				<details>
+					<summary>
+						<span class="faq-title">Этика в сети</span>
+						<!-- Plus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+							<path d="M12 9l0 6"></path>
+						</svg>
+						<!-- Minus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-minus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+						</svg>
+					</summary>
+					<div class="faq-content">
+						Введение обучения этике в сети сфокусировано на формировании у пользователей понимания важности уважения к
+						другим, ответственного поведения и соблюдения правил онлайн-сообществ. Развивайте у пользователя навыки
+						этичного взаимодействия в сети, что способствует уменьшению случаев кибербуллинга и формирует позитивные
+						нормы в онлайн-сообществе.
+					</div>
+				</details>
+
+				<details>
+					<summary>
+						<span class="faq-title">Вовлечение общественности</span>
+						<!-- Plus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+							<path d="M12 9l0 6"></path>
+						</svg>
+						<!-- Minus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-minus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+						</svg>
+					</summary>
+					<div class="faq-content">
+						Недостаток общественного внимания к проблеме кибербуллинга может привести к его недооценке.
+						<br></br>
+						Организация мероприятий и кампаний по привлечению внимания общественности создает возможность для широкой
+						публики понять масштаб и важность проблемы. Это также способствует формированию общественного давления на
+						платформы и образовательные учреждения для активного внедрения мер по предотвращению кибербуллинга.
+					</div>
+				</details>
+
+				<details>
+					<summary>
+						<span class="faq-title">Коллективные действия против кибербуллинга</span>
+						<!-- Plus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+							<path d="M12 9l0 6"></path>
+						</svg>
+						<!-- Minus Icon -->
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-minus expand-icon"
+							width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#303651" fill="none"
+							stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M9 12l6 0"></path>
+						</svg>
+					</summary>
+					<br class="faq-content">
+					Борьба с кибербуллингом становится более эффективной, когда участники сообщества объединяют свои усилия.
+					<br></br>
+					Формирование коллективных инициатив и сообществ позволяет пользователям поддерживать друг друга, обмениваться
+					опытом и разрабатывать совместные стратегии противодействия кибербуллингу. Это также создает атмосферу
+					взаимопомощи и взаимопонимания в онлайн-пространстве.
+		</div>
+		</details>
+		</section> <!-- /.Accordion -->
+
+		<!-- CARDS ПСИХОЛОГИ -->
+		<h2 class="title_h2"> Наши Специалисты </h2>
+		<section class="cards" id="doctors">
+
+			<div id="card">
+				<img id="avatar"
+					src="https://avatars.mds.yandex.net/i?id=f20e54cc896ed8ffc53145019e17a6898c4895e3-11395047-images-thumbs&n=13"
+					width='200px' height='200px' alt="avatar" />
+				<div id="info">
+					<p id="name">Мария Александровна</p>
+					<p id="activity">Психолог</p>
+					<div id="stats">
+						<p class="stats-text">
+							<svg viewBox="0 0 24 24">
+								<path
+									d="M4.5 6.375a4.125 4.125 0 118.25 0 4.125 4.125 0 01-8.25 0zM14.25 8.625a3.375 3.375 0 116.75 0 3.375 3.375 0 01-6.75 0zM1.5 19.125a7.125 7.125 0 0114.25 0v.003l-.001.119a.75.75 0 01-.363.63 13.067 13.067 0 01-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 01-.364-.63l-.001-.122zM17.25 19.128l-.001.144a2.25 2.25 0 01-.233.96 10.088 10.088 0 005.06-1.01.75.75 0 00.42-.643 4.875 4.875 0 00-6.957-4.611 8.586 8.586 0 011.71 5.157v.003z" />
+							</svg>
+							<span>3млн</span>
+							followers
+						</p>
+						<p class="stats-text">
+							<svg viewBox="0 0 24 24">
+								<path d="M12 9a3.75 3.75 0 100 7.5A3.75 3.75 0 0012 9z" />
+								<path fill-rule="evenodd"
+									d="M9.344 3.071a49.52 49.52 0 015.312 0c.967.052 1.83.585 2.332 1.39l.821 1.317c.24.383.645.643 1.11.71.386.054.77.113 1.152.177 1.432.239 2.429 1.493 2.429 2.909V18a3 3 0 01-3 3h-15a3 3 0 01-3-3V9.574c0-1.416.997-2.67 2.429-2.909.382-.064.766-.123 1.151-.178a1.56 1.56 0 001.11-.71l.822-1.315a2.942 2.942 0 012.332-1.39zM6.75 12.75a5.25 5.25 0 1110.5 0 5.25 5.25 0 01-10.5 0zm12-1.5a.75.75 0 100-1.5.75.75 0 000 1.5z"
+									clip-rule="evenodd" />
+							</svg>
+							<span>127</span>
+							photos
+						</p>
+						<p class="stats-text">
+							<svg viewBox="0 0 24 24">
+								<path
+									d="M5.566 4.657A4.505 4.505 0 016.75 4.5h10.5c.41 0 .806.055 1.183.157A3 3 0 0015.75 3h-7.5a3 3 0 00-2.684 1.657zM2.25 12a3 3 0 013-3h13.5a3 3 0 013 3v6a3 3 0 01-3 3H5.25a3 3 0 01-3-3v-6zM5.25 7.5c-.41 0-.806.055-1.184.157A3 3 0 016.75 6h10.5a3 3 0 012.683 1.657A4.505 4.505 0 0018.75 7.5H5.25z" />
+							</svg>
+							<span>69</span>
+							posts
+						</p>
+					</div>
+					<p id="btn">Обратиться за помощью</p>
+				</div>
+			</div> <!-- /CARD1 -->
+
+			<div id="card">
+				<img id="avatar"
+					src="https://avatars.mds.yandex.net/i?id=51e2b0308073f50e49a04282ee79ad1e_sr-5297106-images-thumbs&n=13"
+					width='200px' height='200px' alt="avatar" />
+				<div id="info">
+					<p id="name">Михаил Лабковский </p>
+					<p id="activity">Психолог</p>
+					<div id="stats">
+						<p class="stats-text">
+							<svg viewBox="0 0 24 24">
+								<path
+									d="M4.5 6.375a4.125 4.125 0 118.25 0 4.125 4.125 0 01-8.25 0zM14.25 8.625a3.375 3.375 0 116.75 0 3.375 3.375 0 01-6.75 0zM1.5 19.125a7.125 7.125 0 0114.25 0v.003l-.001.119a.75.75 0 01-.363.63 13.067 13.067 0 01-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 01-.364-.63l-.001-.122zM17.25 19.128l-.001.144a2.25 2.25 0 01-.233.96 10.088 10.088 0 005.06-1.01.75.75 0 00.42-.643 4.875 4.875 0 00-6.957-4.611 8.586 8.586 0 011.71 5.157v.003z" />
+							</svg>
+							<span>3,8млн</span>
+							followers
+						</p>
+						<p class="stats-text">
+							<svg viewBox="0 0 24 24">
+								<path d="M12 9a3.75 3.75 0 100 7.5A3.75 3.75 0 0012 9z" />
+								<path fill-rule="evenodd"
+									d="M9.344 3.071a49.52 49.52 0 015.312 0c.967.052 1.83.585 2.332 1.39l.821 1.317c.24.383.645.643 1.11.71.386.054.77.113 1.152.177 1.432.239 2.429 1.493 2.429 2.909V18a3 3 0 01-3 3h-15a3 3 0 01-3-3V9.574c0-1.416.997-2.67 2.429-2.909.382-.064.766-.123 1.151-.178a1.56 1.56 0 001.11-.71l.822-1.315a2.942 2.942 0 012.332-1.39zM6.75 12.75a5.25 5.25 0 1110.5 0 5.25 5.25 0 01-10.5 0zm12-1.5a.75.75 0 100-1.5.75.75 0 000 1.5z"
+									clip-rule="evenodd" />
+							</svg>
+							<span>247</span>
+							photos
+						</p>
+						<p class="stats-text">
+							<svg viewBox="0 0 24 24">
+								<path
+									d="M5.566 4.657A4.505 4.505 0 016.75 4.5h10.5c.41 0 .806.055 1.183.157A3 3 0 0015.75 3h-7.5a3 3 0 00-2.684 1.657zM2.25 12a3 3 0 013-3h13.5a3 3 0 013 3v6a3 3 0 01-3 3H5.25a3 3 0 01-3-3v-6zM5.25 7.5c-.41 0-.806.055-1.184.157A3 3 0 016.75 6h10.5a3 3 0 012.683 1.657A4.505 4.505 0 0018.75 7.5H5.25z" />
+							</svg>
+							<span>93</span>
+							posts
+						</p>
+					</div>
+					<p id="btn">Обратиться за помощью</p>
+				</div>
+			</div> <!-- /CARD2 -->
+
+			<div id="card">
+				<img id="avatar"
+					src="https://avatars.mds.yandex.net/i?id=117ef55a3874d88d8afa1c11c3b8b72b_sr-5235671-images-thumbs&n=13"
+					width='200px' height='200px' alt="avatar" />
+				<div id="info">
+					<p id="name">Лариса Суркова</p>
+					<p id="activity">Психолог</p>
+					<div id="stats">
+						<p class="stats-text">
+							<svg viewBox="0 0 24 24">
+								<path
+									d="M4.5 6.375a4.125 4.125 0 118.25 0 4.125 4.125 0 01-8.25 0zM14.25 8.625a3.375 3.375 0 116.75 0 3.375 3.375 0 01-6.75 0zM1.5 19.125a7.125 7.125 0 0114.25 0v.003l-.001.119a.75.75 0 01-.363.63 13.067 13.067 0 01-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 01-.364-.63l-.001-.122zM17.25 19.128l-.001.144a2.25 2.25 0 01-.233.96 10.088 10.088 0 005.06-1.01.75.75 0 00.42-.643 4.875 4.875 0 00-6.957-4.611 8.586 8.586 0 011.71 5.157v.003z" />
+							</svg>
+							<span>2,5млн</span>
+							followers
+						</p>
+						<p class="stats-text">
+							<svg viewBox="0 0 24 24">
+								<path d="M12 9a3.75 3.75 0 100 7.5A3.75 3.75 0 0012 9z" />
+								<path fill-rule="evenodd"
+									d="M9.344 3.071a49.52 49.52 0 015.312 0c.967.052 1.83.585 2.332 1.39l.821 1.317c.24.383.645.643 1.11.71.386.054.77.113 1.152.177 1.432.239 2.429 1.493 2.429 2.909V18a3 3 0 01-3 3h-15a3 3 0 01-3-3V9.574c0-1.416.997-2.67 2.429-2.909.382-.064.766-.123 1.151-.178a1.56 1.56 0 001.11-.71l.822-1.315a2.942 2.942 0 012.332-1.39zM6.75 12.75a5.25 5.25 0 1110.5 0 5.25 5.25 0 01-10.5 0zm12-1.5a.75.75 0 100-1.5.75.75 0 000 1.5z"
+									clip-rule="evenodd" />
+							</svg>
+							<span>337</span>
+							photos
+						</p>
+						<p class="stats-text">
+							<svg viewBox="0 0 24 24">
+								<path
+									d="M5.566 4.657A4.505 4.505 0 016.75 4.5h10.5c.41 0 .806.055 1.183.157A3 3 0 0015.75 3h-7.5a3 3 0 00-2.684 1.657zM2.25 12a3 3 0 013-3h13.5a3 3 0 013 3v6a3 3 0 01-3 3H5.25a3 3 0 01-3-3v-6zM5.25 7.5c-.41 0-.806.055-1.184.157A3 3 0 016.75 6h10.5a3 3 0 012.683 1.657A4.505 4.505 0 0018.75 7.5H5.25z" />
+							</svg>
+							<span>106</span>
+							posts
+						</p>
+					</div>
+					<p id="btn">Обратиться за помощью</p>
+				</div>
+			</div> <!-- /CARD3 -->
+
+			<div id="card">
+				<img id="avatar"
+					src="https://avatars.mds.yandex.net/i?id=60a21477708eaca2c45c3ad5f3d173e274be0d9a-5305509-images-thumbs&n=13"
+					width='200px' height='200px' alt="avatar" />
+				<div id="info">
+					<p id="name">Сатья Дас </p>
+					<p id="activity">Психолог</p>
+					<div id="stats">
+						<p class="stats-text">
+							<svg viewBox="0 0 24 24">
+								<path
+									d="M4.5 6.375a4.125 4.125 0 118.25 0 4.125 4.125 0 01-8.25 0zM14.25 8.625a3.375 3.375 0 116.75 0 3.375 3.375 0 01-6.75 0zM1.5 19.125a7.125 7.125 0 0114.25 0v.003l-.001.119a.75.75 0 01-.363.63 13.067 13.067 0 01-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 01-.364-.63l-.001-.122zM17.25 19.128l-.001.144a2.25 2.25 0 01-.233.96 10.088 10.088 0 005.06-1.01.75.75 0 00.42-.643 4.875 4.875 0 00-6.957-4.611 8.586 8.586 0 011.71 5.157v.003z" />
+							</svg>
+							<span>1,2млн</span>
+							followers
+						</p>
+						<p class="stats-text">
+							<svg viewBox="0 0 24 24">
+								<path d="M12 9a3.75 3.75 0 100 7.5A3.75 3.75 0 0012 9z" />
+								<path fill-rule="evenodd"
+									d="M9.344 3.071a49.52 49.52 0 015.312 0c.967.052 1.83.585 2.332 1.39l.821 1.317c.24.383.645.643 1.11.71.386.054.77.113 1.152.177 1.432.239 2.429 1.493 2.429 2.909V18a3 3 0 01-3 3h-15a3 3 0 01-3-3V9.574c0-1.416.997-2.67 2.429-2.909.382-.064.766-.123 1.151-.178a1.56 1.56 0 001.11-.71l.822-1.315a2.942 2.942 0 012.332-1.39zM6.75 12.75a5.25 5.25 0 1110.5 0 5.25 5.25 0 01-10.5 0zm12-1.5a.75.75 0 100-1.5.75.75 0 000 1.5z"
+									clip-rule="evenodd" />
+							</svg>
+							<span>197</span>
+							photos
+						</p>
+						<p class="stats-text">
+							<svg viewBox="0 0 24 24">
+								<path
+									d="M5.566 4.657A4.505 4.505 0 016.75 4.5h10.5c.41 0 .806.055 1.183.157A3 3 0 0015.75 3h-7.5a3 3 0 00-2.684 1.657zM2.25 12a3 3 0 013-3h13.5a3 3 0 013 3v6a3 3 0 01-3 3H5.25a3 3 0 01-3-3v-6zM5.25 7.5c-.41 0-.806.055-1.184.157A3 3 0 016.75 6h10.5a3 3 0 012.683 1.657A4.505 4.505 0 0018.75 7.5H5.25z" />
+							</svg>
+							<span>49</span>
+							posts
+						</p>
+					</div>
+					<p id="btn">Обратиться за помощью</p>
+				</div>
+			</div> <!-- /CARD4 -->
+		</section> <!-- /CARDS -->
+
+		<!-- LOCATIONS -->
+		<div class="container">
+			<h1 class='title'>Наши центры помощи</h1>
+		</div>
+		<section class="locations">
+			<figure class="snip1401"><img
+					src="https://www.sandstonecare.com/wp-content/uploads/2023/06/Alexandria-Featured-Image.jpg" alt="sample87" />
+				<figcaption>
+					<h3>Bliss</h3> <br>
+					<p>ул.Бейбитшилик 30<br>
+						Офис 101 <br>
+						8 705 308 08 08
+					</p>
+				</figcaption><i class="ion-ios-location-outline"></i>
+				<a href="#"></a>
+			</figure>
+			<figure class="snip1401"><img
+					src="https://www.sandstonecare.com/wp-content/uploads/2021/06/Boulder-Facility-500.jpg" alt="sample87" />
+				<figcaption>
+					<h3>Mars</h3>
+					<p>ул. Казахстан, 71А <br>
+						Офис 69 <br>
+						8 707 040 40 40 </p>
+				</figcaption><i class="ion-ios-location-outline"></i>
+				<a href="#"></a>
+			</figure>
+			<figure class="snip1401"><img
+					src="https://www.sandstonecare.com/wp-content/uploads/2021/05/Boulder-Rehab-Center.jpg" alt="sample87" />
+				<figcaption>
+					<h3>Smart</h3>
+					<p> ул. Белинского 25 <br>
+						Офис 27 <br>
+						8 705 205 05 05</p>
+				</figcaption><i class="ion-ios-location-outline"></i>
+				<a href="#"></a>
+			</figure>
+		</section>
+
+		<!-- ИСТОРИИ -->
+		<section class="stories">
+			<div class="slider">
+				<input type="radio" name="testimonial" id="t-1">
+				<input type="radio" name="testimonial" id="t-2">
+				<input type="radio" name="testimonial" id="t-3" checked>
+				<input type="radio" name="testimonial" id="t-4">
+				<input type="radio" name="testimonial" id="t-5">
+				<div class="testimonials">
+					<label class="item" for="t-1">
+						<img
+							src="https://avatars.mds.yandex.net/i?id=e121ad9900c06b8038aec68d4de9ad9e_sr-5341249-images-thumbs&n=13"
+							alt="picture">
+						<p>"Мария признается, что ей до сих пор сложно назвать кибербуллингом то, что произошло с
+							ней несколько лет назад: «Настоящий буллинг кажется чем-то более страшным, несмотря на то, что я
+							подверглась травле в течение года»..."</p>
+						<h2>- Мария Александровна</h2>
+					</label>
+					<label class="item" for="t-2">
+						<img src="https://avatars.mds.yandex.net/i?id=5b0489831dae0651b2d685a7415368fe-4576161-images-thumbs&n=13"
+							alt="picture">
+						<p>"Михаил — разработчик в международном IT-стартапе. Уволиться с предыдущего места работы его вынудило
+							бездействие начальства и окружающих после того, как в течение пяти месяцев он был объектом травли со
+							стороны коллег..."</p>
+						<h2>- Михаил Плотников</h2>
+					</label>
+					<label class="item" for="t-3">
+						<img src="https://avatars.mds.yandex.net/i?id=faeb629ce275add184cc09cac0382a27-3737438-images-thumbs&n=13"
+							alt="picture">
+						<p>"Эдуард - Часто после работы хочу зайти поиграть в игру, что бы расслабиться и отдохнуть, но видимо люди
+							в интернете ничего не понимают и начинают травить даже за то что ты не виноват, таким образом делаешь
+							только хуже, вместо отдыха, получаешь это..."</p>
+						<h2>- Эдуард Эккерт</h2>
+					</label>
+					<label class="item" for="t-4">
+						<img
+							src="https://avatars.mds.yandex.net/i?id=0e116ffb1efcfca748070fde644f37fa_sr-5231707-images-thumbs&n=13"
+							alt="picture">
+						<p>"Знакомая поссорилась с админами в Дискорд сервере мангалиба, админы вопреки правилам , разрешили ее
+							унижать и около 50 или больше человек в сервере (которые были в сети) закибербулили. А в этом сервере она
+							проводила большую часть времени и могла хоть с кем-то общаться , ведь друзей не было в реальной жизни.
+							Итог Попытка с#ицида 2020 год..."</p>
+						<h2>- Нурлан Сабуров</h2>
+					</label>
+					<label class="item" for="t-5">
+						<img
+							src="https://avatars.mds.yandex.net/i?id=8645fee8b2488f0c94b1bc50490f9a05_sr-9234158-images-thumbs&n=13"
+							alt="picture">
+						<p>"Если сообщество токсично-не посещай его, если тебе некомфортно с людьми-вычеркни их из жизни, не
+							нравится-не смотри. Пока оскорбления в сети не переходят в ирл, это просто слова. А вот личная встреча или
+							взлом паролей с последующим разглашение тайны переписки это совсем другое..."</p>
+						<h2>- Асан Пердешов</h2>
+					</label>
+				</div>
+				<div class="dots">
+					<label for="t-1"></label>
+					<label for="t-2"></label>
+					<label for="t-3"></label>
+					<label for="t-4"></label>
+					<label for="t-5"></label>
+				</div>
+			</div>
+		</section>
+
+		<!-- БОТ -->
+		<div class="container">
+			<section class="bot" id="assist">
+				<h1 class='title'>Ассистент Чина</h1>
+				<div class="bot__box">
+					<div id="response"><span class="red">Ассистент:</span> Ассалаумағалейкум! Меня зовут Ассистент Шынгыс, но вы
+						можете называть меня просто Чина. Что вас беспокоит?</div>
+
+					<center>
+						<img class='assistant__img' src="./img/assistant__img.jpg" alt="">
+						<input id="userInput" type="text" placeholder="Поинтересуйтесь у ассистента..." />
+
+						<input type="submit" id="chatSend" value="Отправить" onclick="reply()" onkeydown="enter()" />
+
+				</div>
+
+			</section> <!-- /БОТ -->
+		</div> <!-- /container	 -->
+
+		</div> <!-- /CONTAINER -->
+	</main> <!-- /MAIN -->
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content pt-5 pb-5">
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 mb-50">
+						<div class="footer-widget">
+							<div class="footer-logo">
+								<a href="index.html"><img src="./img/Logo.png" class="img-fluid" alt="logo"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+						<div class="footer-widget">
+							<div class="footer-widget-heading">
+								<h3>Полезные ссылки</h3>
+							</div>
+							<ul>
+								<li><a href="#">Уход за подростками</a></li>
+								<li><a href="#">Приемы</a></li>
+								<li><a href="#">Уход за взрослыми</a></li>
+								<li><a href="#">Карьеры</a></li>
+								<li><a href="#">Уход за молодыми людьми</a></li>
+								<li><a href="#">Обратная связь</a></li>
+								<li><a href="#">Для родителей</a></li>
+								<li><a href="#">Fax: (888) 850-1860</a></li>
+								<li><a href="#">Для специалистов по направлению</a></li>
+								<li><a href="#">Последние новости </a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+						<div class="footer-widget">
+							<div class="footer-widget-heading">
+								<h3>Связь с нами</h3>
+							</div>
+							<div class="footer-text mb-25">
+								<p></p>
+							</div>
+							<div class="subscribe-form">
+								<form action="#">
+									<input type="text" placeholder="Email Address">
+									<button><img src=""></img></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-6 text-center text-lg-left">
+						<div class="copyright-text">
+							<p>Спроектировано командой "Asyqpa Team" </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src='./script/script.js'></script>
+</body>
+
+</html>

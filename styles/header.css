@@ -1,0 +1,9 @@
+/*  Header */
+
+.navbar {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-link {
+	font-size: 18px;
+}

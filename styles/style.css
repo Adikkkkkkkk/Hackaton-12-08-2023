@@ -1,0 +1,58 @@
+/* СБРОС СТИЛЕЙ */
+@import './reset.css';
+/* АККОРДИОН */
+@import './accordion.css';
+/* ШАПКА */
+@import './header.css';
+/* ИНТРО */
+@import './intro.css';
+/* Card */
+@import './card.css';
+/* Location */
+@import './location.css';
+/* ИСТОРИИ */
+@import './stories.css';
+/* bot */
+@import './bot.css';
+/* footer */
+@import './footer.css';
+/* reasons */
+@import './reasons.css';
+
+html {
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background: white;
+}
+
+:root {
+	--mainColor: #333;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 32px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.title_h2 {
+	font-weight: bold;
+	font-size: 32px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.navbarScroll.navbarDark {
+	background-color: black;
+}
